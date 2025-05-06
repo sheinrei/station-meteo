@@ -1,0 +1,251 @@
+html{
+    font-size: 17px; 
+}
+
+body{
+    margin:0;
+    background-color:rgb(227, 246, 244);
+    height:900px;
+   
+}
+
+#input_city{
+    position:relative;
+    z-index: 5;
+    left:50%;top:13%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+
+}
+
+#button_input_city{
+    display:none;
+}
+
+/* cadre recap meteo */
+#today{
+    position:relative;
+    top:4%;left:50%;
+    transform: translateX(-50%);
+  
+    height: 25em;width: 40em;
+   
+    background:linear-gradient(to right, rgb(232, 245, 60), rgb(82, 212, 248) ); 
+    border:2px solid rgb(99, 99, 99);
+    border-radius:25px;
+
+    
+    }
+
+#box_daylight{
+    height: 40%;width: 40%; 
+    position:relative;
+    top:17%;
+    
+        
+    align-items: center;
+    justify-content: center;
+}
+
+#sunrise,#sunset,#daily_light,#date,#ville{
+    position:relative;
+    margin:0;
+    width:17em;height:1.6em;
+    
+       
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    border-radius: 20px;
+   
+}
+#ville{
+    padding-top:-1em;
+}
+
+#sunrise{
+    left:-2.3em;top:0.3em;
+}
+
+#sunset{
+    top:-1.3em;left:2.6em;
+}
+
+#daily_light{
+    top:-1em;
+}
+
+#date{
+    left: 50%;
+    transform: translateX(-50%);
+    top:0.8em;
+    font-size: 1.1em;
+}
+
+#box_temperature_today{
+    height: 8em;width:13em;
+    position:relative;
+    top:-7em;left:14em;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#temperature_min,#temperature_max{
+    position:relative;
+    height: 5.2em;width: 5.2em;
+    border-radius:50%;
+    background-color:rgb(167, 231, 250);
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    line-height: 1.5em ;
+ 
+    border:1px solid rgb(221, 252, 250);
+}
+
+#temperature_max{
+    left:0.4em;
+}
+
+
+/* zone d'affichage du recap meteo par heure */
+#recap_by_hour{
+
+    height: 9em;width: 35em;
+    position: relative;
+    bottom:11em;left:2.5em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    
+}
+
+#hour0,#hour1,#hour2,#hour3,#hour4,#hour5{
+    height: 7em;width: 4.5em;
+    background-color:rgb(196, 237, 255);
+    position: relative;
+    
+
+    
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;left:-0.5em;
+    border-radius:2em;
+    line-height: 2em;
+    text-align: center;
+
+    
+}
+
+#humid_wind{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    bottom:14.5em;left:22em;
+    height: 7em;width: 20em;
+    
+}
+
+#humidity_today,#wind_today{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5em;
+    margin-left: 0.5em;
+    height: 5.2em;width: 5.2em;
+    border-radius:50%;
+    background-color:rgb(167, 231, 250);
+    border:1px solid rgb(221, 252, 250);
+    
+}
+/* fin du cardre meteo */
+
+
+
+
+
+
+
+
+/* box avec les other_city */
+
+#other_city{
+    background:linear-gradient(to right, rgb(232, 245, 60), rgb(82, 212, 248) );
+    height:26em;width: 34em;
+    position:relative;
+    top:13%;left:50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    border-radius:20px; 
+}
+
+
+
+#other_city_1,#other_city_2,#other_city_3,#other_city_4,#other_city_5{
+    height:4em; width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:1em;
+    left : 3em; 
+    background-color: rgb(196, 237, 255);
+    color:black;
+
+    border-radius: 1.75em;
+}
+/* fin  de la box other city */
+
+
+
+/* images */
+
+#img_weather_0,#img_weather_1,#img_weather_2,#img_weather_3,#img_weather_4,#img_weather_5{
+    height: 3em;
+    border-radius:50%;
+    position:relative;
+    top:-2em;
+    
+}
+
+#img_other_city{
+    height:4.4em;
+    position:relative;
+    left:2em;
+}
+#date_update_after,#date_update_before,#hour_update_before,#hour_update_after{
+    height: 1.5em;width: 2.5em;
+    clip-path: polygon(0% 20%,60% 20%,60% 0%,100% 50%,60% 100%,60% 80%,0% 80%);
+    background-color:rgb(69, 69, 69);
+
+    position:absolute;
+    bottom:3.3em;left:23.5rem;
+}
+
+#date_update_before{
+    rotate:180deg;
+    top:-48%;left:70%;
+    
+}
+
+#date_update_after{
+    top:-48%;left:169%;
+    
+}
+
+#hour_update_before{
+    top:135%;left:10%;
+    rotate:180deg;
+}
+
+#hour_update_after{
+    top:135%;left:228%;
+}
