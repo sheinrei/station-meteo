@@ -52,29 +52,29 @@ function traduireCodeMeteo(code) {
   };
 
   if (code == 0){
-    return "/image/soleil.png";
+    return "https://github.com/sheinrei/station-meteo/blob/main/image/soleil.png";
   };
   if (code == 1 || code == 2){
-    return "/image/soleil_nuage.png";
+    return "https://github.com/sheinrei/station-meteo/blob/main/image/soleil_nuage.png";
   };
   if (code == 3){
-    return "/image/nuage.png"
+    return "https://github.com/sheinrei/station-meteo/blob/main/image/nuage.png"
   }
   if (code == 45 || code == 48){
-    return "/image/brouillard.png";
+    return "https://github.com/sheinrei/station-meteo/blob/main/image/brouillard.png";
   };
   if (code == 85 || code == 86 ||code == 73 || code == 75 || code == 77){
-    return "/image/neige.png";
+    return "https://github.com/sheinrei/station-meteo/blob/main/image/neige.png";
   };
   if (code == 95){
-    return "/image/orage.png";
+    return "https://github.com/sheinrei/station-meteo/blob/main/image/orage.png";
   };
   if(code == 95 || code == 96){
-    return "/image/orage_grele.png";
+    return "https://github.com/sheinrei/station-meteo/blob/main/image/orage_grele.png";
   };
   if (code == 51 || code == 53 || code == 55 || code == 56 || code == 57 || code == 61 || code == 63 || code == 65 ||
      code == 66 || code == 67 ||code == 80 || code == 81|| code == 82){
-    return "/image/pluie.png";
+    return "https://github.com/sheinrei/station-meteo/blob/main/image/pluie.png";
   };
   return descriptions[code] || "Code météo inconnu";
 }
