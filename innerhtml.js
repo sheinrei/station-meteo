@@ -122,6 +122,7 @@ async function setDomToday(){
 function hourAfter(){
   if (cached_data_today && hour_account < 18){
     hour_account++
+    console.log(hour_account)
     
     const hour0 = document.getElementById("recap_hour0")
     const hour1 = document.getElementById("recap_hour1")
@@ -199,6 +200,7 @@ function hourBefore(){
   if (cached_data_today && !hour_account==0){
 
     hour_account--
+    console.log(hour_account)
     const hour0 = document.getElementById("recap_hour0");
     const hour1 = document.getElementById("recap_hour1");
     const hour2 = document.getElementById("recap_hour2");
