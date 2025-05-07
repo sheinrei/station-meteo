@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Météo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="meteo.css">
+  <link rel="stylesheet" href="responsiv.css">
 
+</head>
+
+
+<body> 
+  <input type="text" id="input_city" for="input_city" placeholder="Changer de ville">
+
+  <button onclick="loadCity()" value=""name="input_city" id="button_input_city">Valider</button>
+
+  
+
+  <div id="today"></div>
+
+
+
+  <div id="other_city">    
+    <p id="other_city_1"> Paris </p>
+    <p id="other_city_2"> Lille</p>
+    <p id="other_city_3"> Marseille</p>
+    <p id="other_city_4"> Brest</p>
+    <p id="other_city_5"> Toulouse</p>   
+  </div>
+
+
+  
+  <script src="variable.js"></script>
+  <script src="fetch.js"></script> 
+  <script src="function.js"></script>
+  <script src="innerhtml.js"></script>
+  <script src="initialisation.js"></script>
+  </body>
+</html>
